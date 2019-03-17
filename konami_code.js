@@ -10,19 +10,22 @@ const codes = [
   "b",
   "a"
 ];
-
+let index = 0;
 function init() {
-  document.body.addEventListener('keydown',function(){konamiCodeHandler(event)});
+  // your code here
+
+  document.body.addEventListener('keydown', function(){konamiCodeHandler(event)})
 }
+
 function konamiCodeHandler(e) {
- const key = e.key
- if (key === codes[index]) {
-   index++;
-   if (index === codes.length) {
-     alert("Congrats, you unlocked the konami code special")
-     index = 0;
-   }
- } else {
-   index = 0;
- }
+  const key = e.key
+  if (key === codes[index]) {
+    index++;
+    if (index === codes.length) {
+      alert("Congrats, you unlocked the konami code special")
+      index = 0;
+    }
+  } else {
+    index = 0;
+  }
 }
