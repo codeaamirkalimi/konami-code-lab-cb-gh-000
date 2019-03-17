@@ -12,5 +12,5 @@ const codes = [
 ];
 
 function init() {
-  // your code here
+  document.addEventListener('keydown',function(){konamiCodeHandler(event)});
 }
