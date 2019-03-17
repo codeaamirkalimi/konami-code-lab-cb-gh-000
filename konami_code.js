@@ -12,7 +12,7 @@ const codes = [
 ];
 
 function init() {
-  document.addEventListener('keydown',function(){konamiCodeHandler(event)});
+  document.body.addEventListener('keydown',function(){konamiCodeHandler(event)});
 }
 function konamiCodeHandler(e) {
  const key = e.key
